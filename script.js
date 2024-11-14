@@ -12,14 +12,7 @@ let getWeather = ()=>{
         fetch(url)
         .then((resp)=> resp.json())
         .then((date) =>{
-            console.log(date)
-            console.log(date.weather[0].icon);
-            console.log(date.weather[0].main);
-            console.log(date.weather[0].description);
-            console.log(date.name);
-            console.log(date.main);
-            console.log(date.main.temp_min);
-            console.log(date.main.temp_max);
+           
             result.innerHTML = `
             <h2>${date.name}</h2>
             <h4 class="weather">${date.weather[0].main}</h4>
